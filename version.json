@@ -1,0 +1,10 @@
+{
+  "versionCode": 1,
+  "versionName": "1.0",
+  "apkUrl": "https://github.com/dhaouadiahmed1/salati/releases/download/v1.0/salati-v1.0.apk",
+  "sha256": "",
+  "size": 0,
+  "releaseNotes": "Salati 1.0 — first release, based on Aniro 6.15 (MIT). Prayer times and Azan, Quran with Tajweed, reciters and Tafseer, Azkar, Tasbeeh and Qibla.",
+  "forceUpdate": false,
+  "rollout": 100
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Salati</string>
+    <string name="title_activity_main">Salati</string>
+    <string name="package_name">app.salati</string>
+    <string name="custom_url_scheme">app.salati</string>
+    <string name="widget_description">Shows the next prayer countdown</string>
+    <string name="widget_name">Prayer Times</string>
+    <string name="daily_widget_name">Daily Prayers</string>
+    <string name="daily_widget_description">Displays all prayer times for the day</string>
+<string name="prayer_compact_info_name">Countdown · compact</string>
+<string name="prayer_wide_info_name">Countdown · wide</string>
+<string name="daily_agenda_info_name">Prayer agenda</string>
+<string name="daily_large_info_name">Prayer day · large</string>
+</resources>
