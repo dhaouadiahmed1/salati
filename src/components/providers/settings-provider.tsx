@@ -6,7 +6,7 @@ import { reciters as availableReciters } from '@/lib/reciters';
 import { normalizeSettings } from '@/lib/settings-validation';
 
 
-export type Language = 'en' | 'ar' | 'ur' | 'fa';
+export type Language = 'en' | 'ar' | 'fr';
 type QuranViewMode = 'list' | 'page';
 export type QuranEdition = 'uthmani' | 'warsh';
 
@@ -19,8 +19,7 @@ type AzanMode = 'full' | 'silent';
 export const supportedLanguages: Array<{ code: Language; name: string; nativeName: string; dir: 'ltr' | 'rtl' }> = [
   { code: 'ar', name: 'Arabic', nativeName: 'العربية', dir: 'rtl' },
   { code: 'en', name: 'English', nativeName: 'English', dir: 'ltr' },
-  { code: 'ur', name: 'Urdu', nativeName: 'اردو', dir: 'rtl' },
-  { code: 'fa', name: 'Persian', nativeName: 'فارسی', dir: 'rtl' },
+  { code: 'fr', name: 'French', nativeName: 'Français', dir: 'ltr' },
 ];
 
 export function isSupportedLanguage(value: unknown): value is Language {

@@ -4,30 +4,30 @@
 
 @layer base {
   :root {
-    --background: 42 43% 96%;
-    --foreground: 214 45% 12%;
-    --card: 42 36% 99%;
-    --card-foreground: 214 45% 12%;
-    --popover: 42 36% 99%;
-    --popover-foreground: 214 45% 12%;
-    --primary: 39 91% 48%;
-    --primary-foreground: 218 45% 10%;
-    --secondary: 218 32% 91%;
-    --secondary-foreground: 218 45% 18%;
-    --muted: 42 18% 91%;
-    --muted-foreground: 216 12% 40%;
-    --accent: 218 54% 26%;
-    --accent-foreground: 44 37% 94%;
+    --background: 0 0% 100%;
+    --foreground: 155 30% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 155 30% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 155 30% 10%;
+    --primary: 160 84% 32%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 152 40% 92%;
+    --secondary-foreground: 155 30% 14%;
+    --muted: 150 20% 94%;
+    --muted-foreground: 155 12% 42%;
+    --accent: 160 70% 30%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 40 21% 84%;
-    --input: 40 21% 84%;
-    --ring: 38 92% 50%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
+    --border: 150 15% 86%;
+    --input: 150 15% 86%;
+    --ring: 160 84% 39%;
+    --chart-1: 160 70% 40%;
+    --chart-2: 175 60% 35%;
+    --chart-3: 140 55% 38%;
+    --chart-4: 95 50% 45%;
+    --chart-5: 200 55% 45%;
     --radius: 0.875rem;
     --safe-area-top: var(--safe-area-inset-top, env(safe-area-inset-top, 0px));
     --safe-area-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px));
@@ -36,30 +36,30 @@
   }
 
   .dark {
-    --background: 218 32% 8%;
-    --foreground: 44 37% 94%;
-    --card: 218 28% 12%;
-    --card-foreground: 44 37% 94%;
-    --popover: 218 28% 12%;
-    --popover-foreground: 44 37% 94%;
-    --primary: 39 92% 54%;
-    --primary-foreground: 218 45% 10%;
-    --secondary: 218 30% 18%;
-    --secondary-foreground: 44 37% 94%;
-    --muted: 218 20% 17%;
-    --muted-foreground: 217 13% 68%;
-    --accent: 218 54% 24%;
-    --accent-foreground: 44 37% 94%;
+    --background: 160 25% 7%;
+    --foreground: 150 25% 94%;
+    --card: 160 22% 11%;
+    --card-foreground: 150 25% 94%;
+    --popover: 160 22% 11%;
+    --popover-foreground: 150 25% 94%;
+    --primary: 160 76% 50%;
+    --primary-foreground: 160 30% 8%;
+    --secondary: 160 20% 16%;
+    --secondary-foreground: 150 25% 94%;
+    --muted: 160 18% 15%;
+    --muted-foreground: 150 12% 68%;
+    --accent: 160 60% 26%;
+    --accent-foreground: 150 25% 94%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 218 18% 22%;
-    --input: 218 18% 22%;
-    --ring: 38 92% 50%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    --border: 160 15% 20%;
+    --input: 160 15% 20%;
+    --ring: 160 76% 50%;
+    --chart-1: 160 70% 55%;
+    --chart-2: 175 60% 50%;
+    --chart-3: 140 55% 50%;
+    --chart-4: 95 55% 55%;
+    --chart-5: 200 60% 55%;
   }
 }
 
@@ -440,7 +440,7 @@
     box-shadow: 0 0 8px hsl(var(--primary) / 0.08);
   }
 }
-/* Salati brand system: navy, amber, and space to focus. */
+/* Salati brand system: white and green, with space to focus. */
 .app-main { padding-bottom:calc(var(--bottom-dock-height,82px) + 12px); }
 .app-page { width:100%; max-width:48rem; margin-inline:auto; padding:1rem 1.25rem; }
 .home-page { display:flex; flex-direction:column; gap:1rem; max-width:44rem; }
@@ -512,7 +512,7 @@
 .skip-link:focus { top:1rem; }
 button, a, [role=button] { -webkit-tap-highlight-color:transparent; }
 button:focus-visible,a:focus-visible,[role=button]:focus-visible { outline:2px solid hsl(var(--primary)); outline-offset:4px; }
-html[lang=ar] body,html[lang=ur] body,html[lang=fa] body { font-family:var(--font-ui-arabic),var(--font-ui),sans-serif; }
+html[lang=ar] body { font-family:var(--font-ui-arabic),var(--font-ui),sans-serif; }
 html[dir=rtl] .page-heading h1 { letter-spacing:0; }
 @media(max-width:360px) { .app-page { padding-inline:1rem; } .azkar-categories { grid-template-columns:1fr; } .prayer-panel > div { padding-inline:1rem!important; } .navigation-item span { font-size:9px; } }
 @media(min-width:768px) { .app-page { padding-top:1.5rem; } .page-heading-mark { display:block; position:absolute; inset-inline-end:0; bottom:1rem; width:30px; height:30px; color:hsl(var(--primary)); } }
@@ -546,24 +546,24 @@ html[dir=rtl] .page-heading h1 { letter-spacing:0; }
 .prayer-azan-time { display:block; margin-top:0; }
 .prayer-azan-time p:first-child { font-size:.8rem; }
 .prayer-azan-time p:last-child { font-size:.9rem; font-weight:500; }
-/* Frosted navy surfaces, retaining the current information architecture. */
-.app-shell { background:radial-gradient(ellipse at 15% 15%,hsl(218 35% 28% / .22),transparent 55%),radial-gradient(ellipse at 85% 80%,hsl(240 30% 24% / .18),transparent 60%),hsl(var(--background)); }
+/* Frosted green surfaces, retaining the current information architecture. */
+.app-shell { background:radial-gradient(ellipse at 15% 15%,hsl(160 60% 35% / .18),transparent 55%),radial-gradient(ellipse at 85% 80%,hsl(150 55% 30% / .14),transparent 60%),hsl(var(--background)); }
 .brand-wordmark[data-arabic=true] { font-family:var(--font-quran-local),serif; letter-spacing:0; color:hsl(var(--primary)); direction:rtl; font-size:2.5rem; font-weight:600; }
 .brand-wordmark[data-arabic=true] span { display:none; }
-.premium-panel,.prayer-panel { background:linear-gradient(135deg,hsl(var(--card)/.96),hsl(var(--card)/.83)); border:1px solid hsl(var(--foreground)/.10); box-shadow:inset 0 1px 0 hsl(var(--foreground)/.08),0 12px 26px hsl(218 50% 3% / .10); }
-.dark .premium-panel,.dark .prayer-panel { background:linear-gradient(135deg,hsl(218 20% 24%/.65),hsl(225 26% 18%/.78)); box-shadow:inset 0 1px 0 hsl(0 0% 100%/.06),0 14px 28px hsl(228 50% 3%/.15); border-color:hsl(0 0% 100%/.12); }
+.premium-panel,.prayer-panel { background:linear-gradient(135deg,hsl(var(--card)/.96),hsl(var(--card)/.83)); border:1px solid hsl(var(--foreground)/.10); box-shadow:inset 0 1px 0 hsl(var(--foreground)/.08),0 12px 26px hsl(160 40% 4% / .10); }
+.dark .premium-panel,.dark .prayer-panel { background:linear-gradient(135deg,hsl(160 25% 16%/.65),hsl(165 28% 11%/.78)); box-shadow:inset 0 1px 0 hsl(0 0% 100%/.06),0 14px 28px hsl(160 40% 4%/.15); border-color:hsl(0 0% 100%/.12); }
 .home-page .daily-wisdom { background:linear-gradient(135deg,hsl(var(--card)/.95),hsl(var(--card)/.8)); border:1px solid hsl(var(--foreground)/.1); border-radius:1.5rem; padding-top:0; }
-.dark .home-page .daily-wisdom { background:linear-gradient(135deg,hsl(218 20% 24%/.65),hsl(225 26% 18%/.78)); }
+.dark .home-page .daily-wisdom { background:linear-gradient(135deg,hsl(160 25% 16%/.65),hsl(165 28% 11%/.78)); }
 .home-page .daily-wisdom > div { padding-inline:1.5rem; }
 .prayer-timeline button svg { box-sizing:content-box; padding:.45rem; border-radius:50%; background:hsl(var(--foreground)/.055); width:20px; height:20px; stroke-width:1.7; }
 .prayer-timeline button.text-primary svg { background:hsl(var(--primary)/.12); }
 .prayer-timeline button { min-height:76px; }
-.bottom-navigation { margin:0 auto .6rem; width:calc(100% - 1.25rem); border:1px solid hsl(var(--foreground)/.12); border-radius:1.75rem; background:hsl(var(--card)/.82); backdrop-filter:blur(18px) saturate(120%); box-shadow:inset 0 1px 0 hsl(var(--foreground)/.08),0 8px 25px hsl(218 50% 3%/.12); }
+.bottom-navigation { margin:0 auto .6rem; width:calc(100% - 1.25rem); border:1px solid hsl(var(--foreground)/.12); border-radius:1.75rem; background:hsl(var(--card)/.82); backdrop-filter:blur(18px) saturate(120%); box-shadow:inset 0 1px 0 hsl(var(--foreground)/.08),0 8px 25px hsl(160 40% 4%/.12); }
 .navigation-item.is-active { border-radius:1.5rem; background:hsl(var(--primary)/.12); }
 .bottom-navigation svg { width:22px; height:22px; stroke-width:1.7; }
 .heading-settings,.category-symbol { background:hsl(var(--foreground)/.045); box-shadow:inset 0 1px 0 hsl(var(--foreground)/.07); border:1px solid hsl(var(--foreground)/.07); border-radius:14px; }
 .settings-page section .premium-panel { border:1px solid hsl(var(--foreground)/.09); }
-.verse-action-popover { background:hsl(var(--card)/.94); backdrop-filter:blur(16px); border:1px solid hsl(var(--foreground)/.14); box-shadow:0 5px 20px hsl(218 50% 3%/.2),inset 0 1px 0 hsl(var(--foreground)/.08); }
+.verse-action-popover { background:hsl(var(--card)/.94); backdrop-filter:blur(16px); border:1px solid hsl(var(--foreground)/.14); box-shadow:0 5px 20px hsl(160 40% 4%/.2),inset 0 1px 0 hsl(var(--foreground)/.08); }
 .verse-action-popover button { width:44px; height:44px; flex-shrink:0; border-radius:12px; }
 .quran-library .surah-row,.reader-verse,.zikr-reading-card { box-shadow:none; backdrop-filter:none; }
 @media(prefers-reduced-transparency:reduce) { .premium-panel,.prayer-panel,.bottom-navigation,.verse-action-popover { background:hsl(var(--card)); backdrop-filter:none; } }

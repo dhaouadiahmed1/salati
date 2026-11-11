@@ -438,7 +438,7 @@ export const azkarData: AzkarCategory = {
         name: 'Prophetic Duas',
         nameAr: 'أدعية نبوية',
         icon: 'CustomHeart',
-        color: 'from-amber-400 to-yellow-500',
+        color: 'from-emerald-400 to-teal-500',
         items: [
           {
             arabic: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى، وَالتُّقَى، وَالْعَفَافَ، وَالْغِنَى',
@@ -564,7 +564,7 @@ export const azkarData: AzkarCategory = {
         name: 'Daily Duas',
         nameAr: 'أدعية يومية',
         icon: 'SunMoon',
-        color: 'from-blue-900 to-amber-500',
+        color: 'from-emerald-800 to-emerald-500',
         subCategories: [
           {
             id: 'wakeup-azkar',

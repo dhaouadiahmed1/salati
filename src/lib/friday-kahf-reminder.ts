@@ -68,13 +68,9 @@ function reminderCopy(language: Language, offsetMinutes: number) {
         title: 'Surah Al-Kahf soon',
         body: 'Dhuhr is in about 20 minutes. This is a good time to read Surah Al-Kahf.',
       },
-      ur: {
-        title: 'سورۃ الکہف کا وقت قریب ہے',
-        body: 'ظہر میں تقریباً 20 منٹ باقی ہیں، سورۃ الکہف پڑھنے کا اچھا وقت ہے۔',
-      },
-      fa: {
-        title: 'زمان سوره کهف نزدیک است',
-        body: 'حدود 20 دقیقه تا ظهر مانده است؛ زمان خوبی برای خواندن سوره کهف است.',
+      fr: {
+        title: 'Sourate Al-Kahf bientôt',
+        body: 'Le Dhuhr est dans environ 20 minutes. C’est un bon moment pour lire la sourate Al-Kahf.',
       },
     });
   }
@@ -89,13 +85,9 @@ function reminderCopy(language: Language, offsetMinutes: number) {
         title: 'Surah Al-Kahf reminder',
         body: 'It is about 20 minutes after Dhuhr. Remember to read Surah Al-Kahf today.',
       },
-      ur: {
-        title: 'سورۃ الکہف کی یاد دہانی',
-        body: 'ظہر کے تقریباً 20 منٹ بعد کا وقت ہے، آج سورۃ الکہف پڑھنا نہ بھولیں۔',
-      },
-      fa: {
-        title: 'یادآوری سوره کهف',
-        body: 'حدود 20 دقیقه از ظهر گذشته است؛ خواندن سوره کهف امروز را فراموش نکنید.',
+      fr: {
+        title: 'Rappel : sourate Al-Kahf',
+        body: 'Il est environ 20 minutes après le Dhuhr. N’oubliez pas de lire la sourate Al-Kahf aujourd’hui.',
       },
     });
   }
@@ -109,13 +101,9 @@ function reminderCopy(language: Language, offsetMinutes: number) {
       title: 'Surah Al-Kahf time',
       body: 'It is Dhuhr time. Remember to read Surah Al-Kahf today.',
     },
-    ur: {
-      title: 'سورۃ الکہف کا وقت',
-      body: 'ظہر کا وقت ہو گیا ہے، آج سورۃ الکہف پڑھنا نہ بھولیں۔',
-    },
-    fa: {
-      title: 'زمان سوره کهف',
-      body: 'وقت ظهر است؛ خواندن سوره کهف امروز را فراموش نکنید.',
+    fr: {
+      title: 'Heure de la sourate Al-Kahf',
+      body: 'C’est l’heure du Dhuhr. N’oubliez pas de lire la sourate Al-Kahf aujourd’hui.',
     },
   });
 }

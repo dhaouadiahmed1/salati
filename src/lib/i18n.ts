@@ -5,5 +5,5 @@ export function pickLanguage<T>(language: Language, values: Partial<Record<Langu
 }
 
 export function isArabicLike(language: Language) {
-  return language === 'ar' || language === 'ur' || language === 'fa';
+  return language === 'ar';
 }

@@ -84,7 +84,7 @@
             android:countDown="true"
             android:fontFamily="sans-serif-condensed"
             android:includeFontPadding="false"
-            android:textColor="#D4AF37"
+            android:textColor="#34D399"
             android:textSize="22sp"
             android:textStyle="bold" />
     </LinearLayout>

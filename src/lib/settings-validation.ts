@@ -10,7 +10,7 @@ export function normalizeSettings<T extends object>(defaults: T, value: unknown)
     if (typeof candidate === typeof fallback) result[key] = candidate;
   }
   const allowed: Record<string, readonly string[]> = {
-    language: ['ar', 'en', 'ur', 'fa'],
+    language: ['ar', 'en', 'fr'],
     calculationMethod: Object.keys(calculationMethods),
     dstMode: ['auto', 'on', 'off'],
     azanMode: ['full', 'silent'],

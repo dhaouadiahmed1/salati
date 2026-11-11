@@ -58,8 +58,7 @@ const DEFAULT_LOCATION: CachedLocation = {
     names: {
         en: { city: 'Mecca', country: 'Saudi Arabia' },
         ar: { city: 'مكة', country: 'السعودية' },
-        ur: { city: 'مکہ', country: 'سعودی عرب' },
-        fa: { city: 'مکه', country: 'عربستان سعودی' },
+        fr: { city: 'La Mecque', country: 'Arabie saoudite' },
     },
     source: 'default',
     updatedAt: 0,
@@ -414,14 +413,14 @@ export function useLocation() {
 
             setState(toState(merged, language));
 
-            (['ar', 'en', 'ur', 'fa'] as Language[])
+            (['ar', 'en', 'fr'] as Language[])
                 .filter(item => item !== language && !hasNamesForLanguage(merged, item))
                 .forEach(item => void refreshLocalizedNames(merged, item));
         } catch {
             const fallback = cached ?? DEFAULT_LOCATION;
             const error = cached
                 ? null
-                : pickLanguage(language, { ar: 'تعذر تحديد الموقع. يتم استخدام مكة مؤقتًا.', en: 'Could not determine location. Using Mecca for now.', ur: 'مقام معلوم نہیں ہو سکا۔ عارضی طور پر مکہ استعمال کیا جا رہا ہے۔', fa: 'مکان مشخص نشد. فعلاً مکه استفاده می شود.' });
+                : pickLanguage(language, { ar: 'تعذر تحديد الموقع. يتم استخدام مكة مؤقتًا.', en: 'Could not determine location. Using Mecca for now.', fr: 'Impossible de déterminer le lieu. La Mecque est utilisée pour le moment.' });
 
             if (!cached) {
                 saveCachedLocation(DEFAULT_LOCATION);

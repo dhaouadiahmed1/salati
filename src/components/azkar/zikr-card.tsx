@@ -91,9 +91,9 @@ export function ZikrCard({ item, categoryId, index, day }: ZikrCardProps) {
 
         {/* Note Alert */}
         {item.note && (
-          <div className="flex items-center gap-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 px-4 py-3 text-sm">
-            <AlertTriangle className="h-4 w-4 shrink-0 text-amber-500" />
-            <span className="text-amber-700 dark:text-amber-400 font-medium leading-relaxed">{item.note}</span>
+          <div className="flex items-center gap-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 px-4 py-3 text-sm">
+            <AlertTriangle className="h-4 w-4 shrink-0 text-emerald-600" />
+            <span className="text-emerald-700 dark:text-emerald-400 font-medium leading-relaxed">{item.note}</span>
           </div>
         )}
 

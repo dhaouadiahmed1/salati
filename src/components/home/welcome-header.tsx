@@ -9,15 +9,13 @@ import { SlidersHorizontalIcon as SlidersHorizontal } from '@/components/icons/i
 const hijriMonths: Record<Language, string[]> = {
   ar: ['محرم', 'صفر', 'ربيع الأول', 'ربيع الآخر', 'جمادى الأولى', 'جمادى الآخرة', 'رجب', 'شعبان', 'رمضان', 'شوال', 'ذو القعدة', 'ذو الحجة'],
   en: ['Muharram', 'Safar', 'Rabi al-Awwal', 'Rabi al-Thani', 'Jumada al-Ula', 'Jumada al-Akhirah', 'Rajab', 'Shaaban', 'Ramadan', 'Shawwal', 'Dhu al-Qidah', 'Dhu al-Hijjah'],
-  ur: ['محرم', 'صفر', 'ربیع الاول', 'ربیع الثانی', 'جمادی الاول', 'جمادی الثانی', 'رجب', 'شعبان', 'رمضان', 'شوال', 'ذوالقعدہ', 'ذوالحجہ'],
-  fa: ['محرم', 'صفر', 'ربیع الاول', 'ربیع الثانی', 'جمادی الاول', 'جمادی الثانی', 'رجب', 'شعبان', 'رمضان', 'شوال', 'ذی القعده', 'ذی الحجه'],
+  fr: ['Mouharram', 'Safar', 'Rabiʿ al-awwal', 'Rabiʿ al-thani', 'Joumada al-oula', 'Joumada al-akhira', 'Rajab', 'Chaabane', 'Ramadan', 'Chawwal', 'Dhou al-qiʿda', 'Dhou al-hijja'],
 };
 
 const numberLocales: Record<Language, string> = {
   ar: 'ar-EG',
   en: 'en-US',
-  ur: 'ur-PK',
-  fa: 'fa-IR',
+  fr: 'fr-FR',
 };
 
 function formatNumber(value: number, language: Language) {
@@ -61,8 +59,7 @@ export function WelcomeHeader() {
   const greeting = pickLanguage(settings.language, {
     ar: 'السلام عليكم، يومك مبارك',
     en: 'Salam, may your day be blessed',
-    ur: 'السلام علیکم، آپ کا دن مبارک ہو',
-    fa: 'سلام علیکم، روزتان مبارک',
+    fr: 'Salam, que ta journée soit bénie',
   });
 
   return (

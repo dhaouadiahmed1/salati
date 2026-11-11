@@ -26,32 +26,29 @@ const ONBOARDING_DONE_KEY = 'salati_onboarding_v2_completed';
 const NOTIFICATION_PROMPT_KEY = 'salati_notifications_seen';
 
 const copy = {
-  languageTitle: { ar: 'اختر اللغة', en: 'Choose Language', ur: 'زبان منتخب کریں', fa: 'زبان را انتخاب کنید' },
+  languageTitle: { ar: 'اختر اللغة', en: 'Choose Language', fr: 'Choisir la langue' },
   languageDescription: {
     ar: 'يمكنك تغييرها لاحقًا من الإعدادات.',
     en: 'You can change it later in settings.',
-    ur: 'آپ اسے بعد میں سیٹنگز سے بدل سکتے ہیں۔',
-    fa: 'بعداً می توانید آن را از تنظیمات تغییر دهید.',
+    fr: 'Vous pourrez la changer plus tard dans les réglages.',
   },
-  locationTitle: { ar: 'حفظ الموقع', en: 'Save Location', ur: 'مقام محفوظ کریں', fa: 'ذخیره مکان' },
+  locationTitle: { ar: 'حفظ الموقع', en: 'Save Location', fr: 'Enregistrer le lieu' },
   locationDescription: {
     ar: 'نحفظ آخر موقع معروف حتى تظهر مواقيت الصلاة بدون إنترنت.',
     en: 'Your last known location is saved so prayer times work offline.',
-    ur: 'آخری معلوم مقام محفوظ ہوتا ہے تاکہ نماز کے اوقات آف لائن بھی کام کریں۔',
-    fa: 'آخرین مکان شناخته شده ذخیره می شود تا اوقات نماز بدون اینترنت هم کار کند.',
+    fr: 'Votre dernier lieu connu est enregistré pour que les horaires de prière fonctionnent hors ligne.',
   },
-  notificationsTitle: { ar: 'تنبيهات الأذان', en: 'Azan Notifications', ur: 'اذان کی اطلاعات', fa: 'اعلان های اذان' },
+  notificationsTitle: { ar: 'تنبيهات الأذان', en: 'Azan Notifications', fr: 'Notifications de l’adhan' },
   notificationsDescription: {
     ar: 'اسمح بالتنبيهات حتى يصلك الأذان في وقته.',
     en: 'Allow notifications so azan alerts can arrive on time.',
-    ur: 'اطلاعات کی اجازت دیں تاکہ اذان وقت پر مل سکے۔',
-    fa: 'اعلان ها را فعال کنید تا اذان به موقع برسد.',
+    fr: 'Autorisez les notifications pour recevoir l’adhan à l’heure.',
   },
-  detecting: { ar: 'جاري التحديد...', en: 'Detecting...', ur: 'معلوم کیا جا رہا ہے...', fa: 'در حال تشخیص...' },
-  detectLocation: { ar: 'تحديد الموقع', en: 'Detect location', ur: 'مقام معلوم کریں', fa: 'تشخیص مکان' },
-  enableNotifications: { ar: 'تفعيل التنبيهات', en: 'Enable notifications', ur: 'اطلاعات فعال کریں', fa: 'فعال کردن اعلان ها' },
-  skip: { ar: 'تخطي', en: 'Skip', ur: 'چھوڑ دیں', fa: 'رد کردن' },
-  continue: { ar: 'متابعة', en: 'Continue', ur: 'جاری رکھیں', fa: 'ادامه' },
+  detecting: { ar: 'جاري التحديد...', en: 'Detecting...', fr: 'Détection…' },
+  detectLocation: { ar: 'تحديد الموقع', en: 'Detect location', fr: 'Détecter le lieu' },
+  enableNotifications: { ar: 'تفعيل التنبيهات', en: 'Enable notifications', fr: 'Activer les notifications' },
+  skip: { ar: 'تخطي', en: 'Skip', fr: 'Passer' },
+  continue: { ar: 'متابعة', en: 'Continue', fr: 'Continuer' },
 } satisfies Record<string, Record<Language, string>>;
 
 export function OnboardingGate() {

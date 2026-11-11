@@ -100,10 +100,10 @@ export function FajrQuizModal({ open, onSolved, challengeId, nativeChallenge }: 
         )}
       >
         <div className="flex flex-col items-center gap-3 text-center">
-          <div className="flex h-14 w-14 items-center justify-center rounded-full border border-amber-300/40 bg-amber-400/10 text-2xl text-amber-300">
+          <div className="flex h-14 w-14 items-center justify-center rounded-full border border-emerald-300/40 bg-emerald-400/10 text-2xl text-emerald-300">
             &#9790;
           </div>
-          <h2 className="text-xl font-bold text-amber-300" dir="rtl">
+          <h2 className="text-xl font-bold text-emerald-300" dir="rtl">
             {COPY.title}
           </h2>
           <p className="text-sm text-white/55" dir="rtl">
@@ -115,7 +115,7 @@ export function FajrQuizModal({ open, onSolved, challengeId, nativeChallenge }: 
           className={cn(
             'w-full rounded-2xl border p-6 transition-all duration-300',
             isSolved
-              ? 'border-amber-400/60 bg-amber-400/10'
+              ? 'border-emerald-400/60 bg-emerald-400/10'
               : isWrong
                 ? 'border-red-500/50 bg-red-500/10'
                 : 'border-white/10 bg-white/5'
@@ -129,8 +129,8 @@ export function FajrQuizModal({ open, onSolved, challengeId, nativeChallenge }: 
                     className={cn(
                       'mx-1 inline-block min-w-[72px] rounded-lg border-b-2 border-dashed px-3 py-0.5 text-center transition-all duration-300',
                       isSolved
-                        ? 'border-amber-300 bg-amber-400/10 text-amber-200'
-                        : 'border-amber-400/60 text-amber-300/50'
+                        ? 'border-emerald-300 bg-emerald-400/10 text-emerald-200'
+                        : 'border-emerald-400/60 text-emerald-300/50'
                     )}
                   >
                     {isSolved ? quiz.correctWord : COPY.placeholder}
@@ -162,7 +162,7 @@ export function FajrQuizModal({ open, onSolved, challengeId, nativeChallenge }: 
                 className={cn(
                   'rounded-xl border px-4 py-4 font-quran text-lg transition-all duration-200 active:scale-95',
                   isCorrectChoice
-                    ? 'scale-105 border-amber-300 bg-amber-400/15 text-amber-200'
+                    ? 'scale-105 border-emerald-300 bg-emerald-400/15 text-emerald-200'
                     : isWrongChoice
                       ? 'border-red-500 bg-red-500/20 text-red-300'
                       : 'border-white/10 bg-white/5 text-white hover:border-white/20 hover:bg-white/10'
@@ -176,7 +176,7 @@ export function FajrQuizModal({ open, onSolved, challengeId, nativeChallenge }: 
 
         {isSolved && (
           <div className="flex flex-col items-center gap-2 text-center">
-            <p className="text-lg font-bold text-amber-200" dir="rtl">
+            <p className="text-lg font-bold text-emerald-200" dir="rtl">
               {COPY.success}
             </p>
             <p className="text-sm text-white/45" dir="rtl">
